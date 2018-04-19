@@ -3,10 +3,12 @@ John Liu, Larry Wong, Derek Song
 
 To-Do List
 1) Create interface with the following methods
-- peekFirst()
-- peekLast()
+- isEmpty()
 - enqueueFirst(T)
 - enqueueLast(T)
+- toString()
+- peekFirst()
+- peekLast()
 - dequeFirst()
 - dequeLast()
 
