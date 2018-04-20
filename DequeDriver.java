@@ -31,11 +31,14 @@ public class DequeDriver{
     System.out.println("Peeking Front: " + farm.peekFirst()); //Broccoli
     farm.addFirst("Brussels sprouts");
     System.out.println("Peeking Front: " + farm.peekFirst()); //Brussels sprouts
+    farm.addFirst("Carrots");
+    farm.addFirst("Corn");
+    System.out.println("Peeking Front: " + farm.peekFirst()); //Corn
 
     System.out.println("");
 
     System.out.println("------Current Deque------");
-    System.out.println(farm); // END: Cabbage Kale Broccoli Brussels sprouts :FRONT
+    System.out.println(farm); // END: Cabbage Kale Broccoli Brussels sprouts Carrots Corn :FRONT
 
     System.out.println("");
 
