@@ -26,4 +26,6 @@ public interface Deque<T>{
 
   //Returns the last element of the deque without removing it.
   public T peekLast();
+
+
 }

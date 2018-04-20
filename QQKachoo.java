@@ -8,7 +8,7 @@
 * A double linked-list-based, dequq
 *
 *       -------------------------------
-*   end |  <--->   D E Q U E   <--->    | front
+*   end |  --->   Q U E U E   --->    | front
 *       -------------------------------
 *
 *  linkages point in both direction for O(1) en/dequeuing
@@ -166,7 +166,7 @@ public class QQKachoo<T> implements Deque<T>
 
   public static void main(String[] args)
   {
-    //Check out the driver class (DequeDriver.java) courtesy of StillCold (Fiona Cai, Kevin Feng, Alexia Leong)
+    //Chexk out the driver class (DequeDriver.java) courtesy of StillCold (Fiona Cai, Kevin Feng, Alexia Leong)
   }
 
 }
