@@ -16,7 +16,7 @@ To-Do List
 4) Implement each method (incrementally)
 5) Create or borrow a driver to test functionality
 
-* Background of DEQue is a DLList, because it is easier to visualize, especially using front and back pointers. When we draw diagrams it would be easier to follow than if we were to use ArrayList
+* Our Deque is a double linked node based because it allowed the coder more freedom to how each implemented method wold work, instead of borrowing the builtin methods in the java API. In addition, it allowed for O(1) runtime for most methods, since working with the front and the end is independent of the other nodes. 
 
 ## Methods to implement (in ascending order):
 - isEmpty()
