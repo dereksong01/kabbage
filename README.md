@@ -16,7 +16,7 @@
 4) Implement each method (incrementally)
 5) Create or borrow a driver to test functionality
 
-* Our Deque is a double linked node based because it allowed the coder more freedom to control how each implemented method would work, instead of borrowing the built-in methods in the java API. In addition, it allowed for O(1) runtime for most methods, since working with the front and the end is independent of the other nodes. 
+* Our Deque is a double linked node based because it allowed the coder more freedom to control how each implemented method would work, instead of borrowing the built-in methods in the java API. In addition, it allowed for O(1) runtime for most methods, since working with the front and the end nodes are independent of the other nodes. 
 
 ## Methods to implement (in ascending order):
 - isEmpty()
@@ -30,9 +30,8 @@
 
 _From Wikipedia.com_
 > In computer science, a double-ended queue (dequeue, often abbreviated to deque) is an abstract data type that generalizes a queue, for which elements can be added to or removed from either the front (head) or back (tail).
-We decided to choose these methods as opposed to the many others is because
 
-- We decided to choose the above methods because they are what define a deque. These methods above are, in the simplest terms, the foundations of a deque and without anyone of them, the data structure will not be a deque. In addition, other methods do not need to implemented for the data structure to work as it is intended to. The other methods appear to be some variant of the essential methods stated above. For example, offerLast() is a variant of addLast(), but with a restriction that limits the addition of another node.
+- We decided to choose the above methods because they are what define a deque. These methods above are, in the simplest terms, the foundations of a deque and without anyone of them, the data structure will not be a deque. In addition, other methods do not need to implemented for the data structure to work as it is intended to. The other methods appear to be some variant of the essential methods stated above. For example, offerLast() is a variant of addLast(), but with a restriction that limits the addition of another node. Therefore, it is not essential for what we are doing here.
 
 ## Developmental Plan:
-- We plan on prioritizing functionality over robustness. We do this by first creating methods that are essential to the deque data structure. We first implement the easier methods that do not require in-depth analysis. For example, isEmpty() is independent of the deque structure. Next, in order for any other deque methods to work, it requires the add methods. Next, we decided to implement the methods that provide visibility within the deque. Finally, we decided to implement the remove methods as the last ones because they depend on the functionality of the deque.
+- We plan on prioritizing functionality over robustness. We do this by first creating methods that are essential to the deque data structure. We first implement the easier methods that do not require in-depth analysis. For example, isEmpty() is independent of the deque structure, but only relies on the instance variable size. Next, in order for any other deque methods to work, it requires the add methods. Next, we decided to implement the methods that provide visibility within the deque in order to test the functionality. Finally, we decided to implement the remove methods as the last ones because they depend on the functionality of the deque.
