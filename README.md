@@ -1,7 +1,7 @@
 # TEAM kabbage
 ### John Liu, Larry Wong, Derek Song
 
-To-Do List
+# To-Do List
 1) Create and maintain a working repo
 2) Research what a deque is and pick out essential methods that define it
 3) Create interface with the following methods (not in order)
@@ -33,3 +33,6 @@ _From Wikipedia.com_
 We decided to choose these methods as opposed to the many others is because
 
 - We decided to choose the above methods because they are what define a deque. These methods above are, in the simplest terms, the foundations of a deque and without anyone of them, the data structure will not be a deque. In addition, other methods do not need to implemented for the data structure to work as it is intended to. The other methods appear to be some variant of the essential methods stated above. For example, offerLast() is a variant of addLast(), but with a restriction that limits the addition of another node.
+
+## Developmental Plan:
+- We plan on prioritizing functionality over robustness. We do this by first creating methods that are essential to the deque data structure. We first implement the easier methods that do not require in-depth analysis. For example, isEmpty() is independent of the deque structure. Next, in order for any other deque methods to work, it requires the add methods. Next, we decided to implement the methods that provide visibility within the deque. Finally, we decided to implement the remove methods as the last ones because they depend on the functionality of the deque.
