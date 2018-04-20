@@ -6,10 +6,10 @@
 
 public interface Deque<T>{
 
-  //means of adding an element from front of collection:
+  //means of adding an element to the front of collection:
   public void addFirst( T x );
 
-  //means of adding an element from back of collection:
+  //means of adding an element to the back of collection:
   public void addLast( T x );
 
   //means of removing an element from front of collection:
@@ -22,7 +22,7 @@ public interface Deque<T>{
   public boolean isEmpty();
 
   //Returns the first element of the deque without removing it.
-  public T peekFront();
+  public T peekFirst();
 
   //Returns the last element of the deque without removing it.
   public T peekLast();
