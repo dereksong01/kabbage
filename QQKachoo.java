@@ -29,11 +29,16 @@ public class QQKachoo<T> implements Deque<T>
     _size = 0;
   } //end constructor
 
+  
+/*****************************************************
   //means of adding an element to the front of collection:
   // @param addVal: value to be queued to the front
   // O(1): independent of deque size
+*****************************************************/
   public void addFirst( T addVal )
   {
+    if (addVal == null) throw new NullPointerException();
+    
     //create new node with the old front as the previous node
     DLLNode<T> tmp = new DLLNode<T>( addVal , _front , null );
 
@@ -50,11 +55,16 @@ public class QQKachoo<T> implements Deque<T>
     _size++;
   } //end addFirst()
 
+
+/*****************************************************
   //means of adding an element from back of collection:
   // @param addVal: value to be queued to the end
   // O(1): independent of deque size
+*****************************************************/
   public void addLast( T addVal )
   {
+    if (addVal == null) return NullPointerException();
+    
     //create new node with the old end as the next node
     DLLNode<T> tmp = new DLLNode<T>( addVal , null , _end );
 
@@ -71,14 +81,17 @@ public class QQKachoo<T> implements Deque<T>
     _size++;
   } //end addLAst()
 
+
+/*****************************************************
   //means of removing an element from front of collection:
-  // O(1): no need to traverse through deque
+  // O(1): no need to traverse through deque  
+*****************************************************/
   public T removeFirst()
   {
     //can't remove nothing
     if(isEmpty())
     {
-      return null;
+      throw new NoSuchElementException();
     }
 
     //retain the cargo before moving the pointer
@@ -99,13 +112,16 @@ public class QQKachoo<T> implements Deque<T>
     return retVal;
   } //end removeFirst()
 
+
+/*****************************************************
   //means of removing an element from back of collection:
-  // O(1): no need to traverse through deque
+  // O(1): no need to traverse through deque 
+*****************************************************/
   public T removeLast()
   {
     //can't remove nothing
     if(isEmpty()){
-      return null;
+      throw new NoSuchElementException();
     }
 
     //retain the cargo before moving the pointer
@@ -126,8 +142,11 @@ public class QQKachoo<T> implements Deque<T>
     return retVal;
   } //end removeLast()
 
+
+/*****************************************************
   //Returns true if this deque is empty, otherwise returns false.
   // O(1): no need to traverse through deque
+*****************************************************/
   public boolean isEmpty()
   {
     return _size == 0;
@@ -140,8 +159,10 @@ public class QQKachoo<T> implements Deque<T>
     return _front.getCargo();
   } //end peekFirst()
 
+/*****************************************************
   //Returns the last element of the deque without removing it.
   // O(1): independent of deque size
+*****************************************************/
   public T peekLast()
   {
     return _end.getCargo();
