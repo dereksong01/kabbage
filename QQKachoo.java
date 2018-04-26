@@ -191,7 +191,7 @@ public class QQKachoo<T> implements Deque<T>
 
   public static void main(String[] args)
   {
-    //Chexk out the driver class (DequeDriver.java) courtesy of StillCold (Fiona Cai, Kevin Feng, Alexia Leong)
+    //Check out the driver class (DequeDriver.java) courtesy of StillCold (Fiona Cai, Kevin Feng, Alexia Leong)
   }
 
 }
