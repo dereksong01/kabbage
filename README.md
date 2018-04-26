@@ -36,3 +36,8 @@ _From Wikipedia.com_
 ## Developmental Plan:
 - We plan to keep our deque as simple as possible so that anyone can pick it up and use/modify it easily. We do this by first limiting the methods that are considered "essential" to the deque data structure by eliminating methods that seem redundant (as explained above). Selected methods are stated above. 
 - We first implement the easier methods that do not require in-depth analysis. For example, isEmpty() relies solely on the instance variable size. Next, in order for any other deque methods to work, it requires the add methods. Next, we decided to implement the methods that provide visibility within the deque in order to test the functionality. Finally, we decided to implement the remove methods as the last ones because they depend on the functionality of the deque.
+
+## Changes (so far):
+- README is made clearer and explains our intentions more in detail
+- Exceptions are added to the methods
+- Comments are easier to read
